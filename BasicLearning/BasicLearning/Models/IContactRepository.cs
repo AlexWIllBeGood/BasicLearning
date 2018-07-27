@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BasicLearning.Models
 {
-    public interface IContractRepository
+    public interface IContactRepository
     {
         IEnumerable GetAllContacts();
         Contact GetContact(string id);
