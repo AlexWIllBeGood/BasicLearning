@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicLearning", "BasicLearning\BasicLearning.csproj", "{00B51089-132D-4BAE-9DD4-F693F17865AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebApi", "BasicLearning\TestWebApi.csproj", "{00B51089-132D-4BAE-9DD4-F693F17865AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMongoDB", "TestMongoDB\TestMongoDB.csproj", "{F589AE39-EA5B-4525-9E95-F5CC5F6B3FF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{00B51089-132D-4BAE-9DD4-F693F17865AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00B51089-132D-4BAE-9DD4-F693F17865AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00B51089-132D-4BAE-9DD4-F693F17865AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F589AE39-EA5B-4525-9E95-F5CC5F6B3FF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F589AE39-EA5B-4525-9E95-F5CC5F6B3FF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F589AE39-EA5B-4525-9E95-F5CC5F6B3FF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F589AE39-EA5B-4525-9E95-F5CC5F6B3FF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
