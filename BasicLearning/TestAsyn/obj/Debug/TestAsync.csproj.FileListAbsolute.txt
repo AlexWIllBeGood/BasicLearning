@@ -1,0 +1,7 @@
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestAsyn\bin\Debug\TestAsyn.exe.config
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestAsyn\bin\Debug\TestAsyn.exe
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestAsyn\bin\Debug\TestAsyn.pdb
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestAsyn\obj\Debug\TestAsync.csproj.CoreCompileInputs.cache
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestAsyn\obj\Debug\TestAsyn.exe
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestAsyn\obj\Debug\TestAsyn.pdb
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestAsyn\obj\Debug\TestAsync.csprojAssemblyReference.cache

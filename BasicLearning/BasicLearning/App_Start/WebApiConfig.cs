@@ -17,6 +17,7 @@ namespace BasicLearning
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
+                //只是表示参数是可选的而已
                 defaults: new { id = RouteParameter.Optional }
             );
         }
