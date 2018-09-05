@@ -24,6 +24,16 @@ namespace TestAsync
             //MyDownloadingStringAsync myAsync = new MyDownloadingStringAsync();
             //myAsync.DoRun();
 
+            HttpContentSync hcs = new HttpContentSync();
+            hcs.sw.Start();
+            //Task<string> temp1 = hcs.GetHttpContentAsString("https://www.baidu.com/");
+            //Task<string> temp2 = hcs.GetHttpContentAsString("https://www.zhihu.com/signup?next=%2F");
+            
+            Task<string> temp1= hcs.GetHttpContentByWebClient("https://www.baidu.com/");
+            Task<string> temp2 = hcs.GetHttpContentByWebClient("https://www.zhihu.com/signup?next=%2F");
+            Console.WriteLine(temp1.Result);
+            Console.WriteLine(temp2.Result);
+            //只是抓取网页的内容 而不会抓取样式
             Console.ReadKey();
         }
         //使用async关键字来修饰方法
@@ -102,8 +112,22 @@ namespace TestAsync
             Console.WriteLine("  End Counting{0}:   {1,4} ms", id, sw.Elapsed.TotalMilliseconds);
         }
     }
-    class GetHttpContentSync
+    class HttpContentSync
     {
-        public GetContentByUri
+        public Stopwatch sw = new Stopwatch();
+        public HttpClient gc = new HttpClient();
+        public async Task<string> GetHttpContentAsString(string url)
+        {
+            string content = await gc.GetStringAsync(url);
+            Console.WriteLine("get content from {0} finished,time elapsed {1,4}", url, sw.ElapsedMilliseconds);
+            return content;
+        }
+        public async Task<string> GetHttpContentByWebClient(string url)
+        {
+            WebClient wc = new WebClient();
+            string temp = await wc.DownloadStringTaskAsync(new Uri(url));
+            Console.WriteLine("get content from {0} finished,time elapsed {1,4}", url, sw.ElapsedMilliseconds);
+            return temp;
+        }
     }
 }
