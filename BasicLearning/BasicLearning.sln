@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMongoDB", "TestMongoDB\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAsync", "TestAsyn\TestAsync.csproj", "{B4F83F87-A1FD-4D7E-A77A-1524087FEDEA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAsync20180905", "TestAsync20180905\TestAsync20180905.csproj", "{4AE3E4B7-77CE-4C0B-9CA1-85322C98777E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B4F83F87-A1FD-4D7E-A77A-1524087FEDEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4F83F87-A1FD-4D7E-A77A-1524087FEDEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4F83F87-A1FD-4D7E-A77A-1524087FEDEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AE3E4B7-77CE-4C0B-9CA1-85322C98777E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AE3E4B7-77CE-4C0B-9CA1-85322C98777E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AE3E4B7-77CE-4C0B-9CA1-85322C98777E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AE3E4B7-77CE-4C0B-9CA1-85322C98777E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,7 @@
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestAsync20180905\obj\Debug\TestAsync20180905.csprojAssemblyReference.cache
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestAsync20180905\obj\Debug\TestAsync20180905.csproj.CoreCompileInputs.cache
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestAsync20180905\bin\Debug\TestAsync20180905.exe.config
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestAsync20180905\bin\Debug\TestAsync20180905.exe
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestAsync20180905\bin\Debug\TestAsync20180905.pdb
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestAsync20180905\obj\Debug\TestAsync20180905.exe
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestAsync20180905\obj\Debug\TestAsync20180905.pdb
