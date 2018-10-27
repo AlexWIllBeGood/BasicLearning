@@ -33,14 +33,14 @@ namespace TestAsync20180905
             //Console.WriteLine();
 
             //#region 异步顺序获取网页内容
-            //GetWebInfoAsync gwia = new GetWebInfoAsync();
-            //gwia.sw.Start();
-            //foreach (var i in urlArray)
-            //{
-            //    Task<string> temp = gwia.GetStringContentAsync(i);   
-            //}
-            //gwia.sw.Stop();
-            //Console.ReadKey();
+            GetWebInfoAsync gwia = new GetWebInfoAsync();
+            gwia.sw.Start();
+            foreach (var i in urlArray)
+            {
+                Task<string> temp = gwia.GetStringContentAsync(i);
+            }
+            gwia.sw.Stop();
+            Console.ReadKey();
             //#endregion
 
 

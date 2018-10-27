@@ -1,0 +1,10 @@
+C:\Users\win7\Desktop\GitFile\BasicLearning\Test20181026\obj\Debug\Test20181026.csprojAssemblyReference.cache
+C:\Users\win7\Desktop\GitFile\BasicLearning\Test20181026\obj\Debug\Test20181026.csproj.CoreCompileInputs.cache
+C:\Users\win7\Desktop\GitFile\BasicLearning\Test20181026\bin\Debug\Test20181026.exe.config
+C:\Users\win7\Desktop\GitFile\BasicLearning\Test20181026\bin\Debug\Test20181026.exe
+C:\Users\win7\Desktop\GitFile\BasicLearning\Test20181026\bin\Debug\Test20181026.pdb
+C:\Users\win7\Desktop\GitFile\BasicLearning\Test20181026\bin\Debug\Newtonsoft.Json.dll
+C:\Users\win7\Desktop\GitFile\BasicLearning\Test20181026\bin\Debug\Newtonsoft.Json.xml
+C:\Users\win7\Desktop\GitFile\BasicLearning\Test20181026\obj\Debug\Test20181026.csproj.CopyComplete
+C:\Users\win7\Desktop\GitFile\BasicLearning\Test20181026\obj\Debug\Test20181026.exe
+C:\Users\win7\Desktop\GitFile\BasicLearning\Test20181026\obj\Debug\Test20181026.pdb
