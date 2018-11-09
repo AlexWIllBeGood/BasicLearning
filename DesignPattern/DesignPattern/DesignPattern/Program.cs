@@ -11,39 +11,34 @@ namespace DesignPattern
     {
         static void Main(string[] args)
         {
-            //Counter counter = Counter.GetCounter();
-            //Console.WriteLine(counter.getIncreasedCount());
-            //Console.WriteLine(counter.getIncreasedCount());
-            //Console.WriteLine(counter.getIncreasedCount());
-            //Console.WriteLine(counter.getCurrentCount());
+            //Counter c = Counter.GetCounter();
+            //Console.WriteLine(c.getIncreasedCount());
+            //Console.WriteLine(c.getIncreasedCount());
+            //Counter c1 = Counter.GetCounter();
+            ////能够确保获取到的确实是一个counter()
+            //Console.WriteLine(c1.getIncreasedCount());
+            //Console.WriteLine(c1.getIncreasedCount());
 
-            //测试异步异步执行中的单例模型
-            Task t1 = new Task(count1);
-            Task t2 = new Task(count2);
+            Task t1 = new Task(()=> {
+                while (true)
+                {
+                    Counter c = Counter.GetCounter();
+                    Console.WriteLine("counter1:"+c.getIncreasedCount());
+                    Thread.Sleep(500);
+                }
+            });
+            Task t2 = new Task(() => {
+                while (true)
+                {
+                    Counter c = Counter.GetCounter();
+                    Console.WriteLine("counter2:" + c.getIncreasedCount());
+                    Thread.Sleep(100);
+                }
+            });
             t1.Start();
             t2.Start();
             Console.ReadKey();
-        }
-        public static void showCount()
-        {
-            Counter c = Counter.GetCounter();
-            c.getIncreasedCount();
-            Console.WriteLine(string.Format("current counter:{0}",c.getCurrentCount()));
-            Thread.Sleep(200);
-        }
-        public static void count1()
-        {
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine("count1:" + i);
-            }
-        }
-        public static void count2()
-        {
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine("count2:" + i);
-            }
+
         }
         #region 单例模式标准写法
         //单线程的单例模式
@@ -73,14 +68,17 @@ namespace DesignPattern
             }
             public static Singleton_MutiThread GetInstance()
             {
-                lock (locker)
+                if (uniqueInstance == null)
                 {
-                    if (uniqueInstance == null)
+                    lock (locker)
                     {
-                        uniqueInstance = new Singleton_MutiThread();
+                        if (uniqueInstance == null)
+                        {
+                            uniqueInstance = new Singleton_MutiThread();
+                        }
                     }
-                    return uniqueInstance;
                 }
+                return uniqueInstance;
             }
         }
         #endregion
@@ -88,7 +86,7 @@ namespace DesignPattern
         #region 单例模式的实例
         public class Counter
         {
-            private static int count;
+            private int count;
             private readonly static object locker = new object();
             private static Counter counter;
             private Counter()
@@ -106,11 +104,17 @@ namespace DesignPattern
             }
             public int getCurrentCount()
             {
-                return count;
+                lock (locker)
+                {
+                    return count;
+                }
             }
             public int getIncreasedCount()
             {
-                return count++;
+                lock (locker)
+                {
+                    return count++;
+                }
             }
         }
         #endregion
