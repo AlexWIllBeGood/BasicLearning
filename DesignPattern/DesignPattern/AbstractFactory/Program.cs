@@ -4,86 +4,85 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Factory
+namespace AbstractFactory
 {
-    //工厂模型
+    //抽象工厂模式 提供一个创建产品的接口创建相关或者依赖的对象，而不具体明确指定具体类
     class Program
     {
-        
         static void Main(string[] args)
         {
-            Creator c1 = new PenSupplier();
-            Creator c2 = new PencilSupplier();
-            Creator c3 = new RulerSupplier();
-            Client client = new Client();
-            c1.getStationeryFromFactory().Print();
-            c2.getStationeryFromFactory().Print();
-            c3.getStationeryFromFactory().Print();
-            client.UseStationery(c1.getStationeryFromFactory());
-            client.UseStationery(c2.getStationeryFromFactory());
-            client.UseStationery(c3.getStationeryFromFactory());
-            Console.ReadKey();
+            AbstractFactory af1 = new WuhanSupplier();
+            Beef b1= af1.GetBeef();
+            Fish f1 = af1.GetFish();
+            b1.Print();
+            f1.Print();
+            AbstractFactory af2 = new ShenzhenSupplier();
+            af2.GetBeef().Print();
+            af2.GetFish().Print();
         }
-        public class Client
-        {
-            public  void UseStationery(Stationery s)
-            {
-                //使用stationery
-            }
-        }
-        //文具类
-        public abstract class Stationery
+        private abstract class Fish
         {
             public abstract void Print();
         }
-        public class Pen:Stationery
+        private abstract class Beef
+        {
+            public abstract void Print();
+        }
+        private class WuhanFish : Fish
         {
             public override void Print()
             {
-                Console.WriteLine("this is a Pen");
+                Console.WriteLine("fish from Wuhan");
             }
         }
-        public class Pencill:Stationery
+        private class ShenzhenFish : Fish
         {
             public override void Print()
             {
-                Console.WriteLine("this is a Pencil");
+                Console.WriteLine("fish from Shenzhen");
             }
         }
-        public class Ruler : Stationery
+        private class WuhanBeef:Beef
         {
             public override void Print()
             {
-                Console.WriteLine("this is a ruler");
+                Console.WriteLine("beef from Wuhan");
             }
         }
-        /// <summary>
-        /// 抽象工厂类
-        /// </summary>
-        public abstract class Creator
+        private class ShenzhenBeef : Beef
         {
-            public abstract Stationery getStationeryFromFactory();
-        }
-        public class PenSupplier : Creator
-        {
-            public override Stationery getStationeryFromFactory()
+            public override void Print()
             {
-                return new Pen();
+                Console.WriteLine("beef from Shenzhen");
             }
         }
-        public class PencilSupplier : Creator
+        private abstract class AbstractFactory
         {
-            public override Stationery getStationeryFromFactory()
+            public abstract Fish GetFish();
+            public abstract Beef GetBeef();
+        }
+        private class WuhanSupplier : AbstractFactory
+        {
+            public override Beef GetBeef()
             {
-                return new Pencill();
+                return new WuhanBeef();
+            }
+
+            public override Fish GetFish()
+            {
+                return new WuhanFish();
             }
         }
-        //新添加的类 不需要去修改工厂类（只是定义规则）
-        public class RulerSupplier : Creator
+        private class ShenzhenSupplier : AbstractFactory
         {
-            public override Stationery getStationeryFromFactory()
+            public override Beef GetBeef()
             {
-                return new Ruler();
+                return new ShenzhenBeef();
+            }
+
+            public override Fish GetFish()
+            {
+                return new ShenzhenFish();
             }
         }
     }
