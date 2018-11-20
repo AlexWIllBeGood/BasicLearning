@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciTest", "FibonacciT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test20181115", "Test20181115\Test20181115.csproj", "{2AE04D54-24CD-44B2-9024-E103F0CDB5F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuartzTest20181120", "QuartzTest20181120\QuartzTest20181120.csproj", "{8DC5DB53-455D-4ABF-A183-E0AA89809702}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{2AE04D54-24CD-44B2-9024-E103F0CDB5F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AE04D54-24CD-44B2-9024-E103F0CDB5F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AE04D54-24CD-44B2-9024-E103F0CDB5F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DC5DB53-455D-4ABF-A183-E0AA89809702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC5DB53-455D-4ABF-A183-E0AA89809702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC5DB53-455D-4ABF-A183-E0AA89809702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC5DB53-455D-4ABF-A183-E0AA89809702}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

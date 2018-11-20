@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2AE04D54-24CD-44B2-9024-E103F0CDB5F7}</ProjectGuid>
+    <ProjectGuid>{8DC5DB53-455D-4ABF-A183-E0AA89809702}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Test20181115</RootNamespace>
-    <AssemblyName>Test20181115</AssemblyName>
+    <RootNamespace>QuartzTest20181120</RootNamespace>
+    <AssemblyName>QuartzTest20181120</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
