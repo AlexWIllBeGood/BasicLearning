@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test20181115", "Test2018111
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuartzTest20181120", "QuartzTest20181120\QuartzTest20181120.csproj", "{8DC5DB53-455D-4ABF-A183-E0AA89809702}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEPPlus", "TestEPPlus\TestEPPlus.csproj", "{095C61E4-2BEC-4E6B-885F-2D5B8758F4FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{8DC5DB53-455D-4ABF-A183-E0AA89809702}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DC5DB53-455D-4ABF-A183-E0AA89809702}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DC5DB53-455D-4ABF-A183-E0AA89809702}.Release|Any CPU.Build.0 = Release|Any CPU
+		{095C61E4-2BEC-4E6B-885F-2D5B8758F4FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{095C61E4-2BEC-4E6B-885F-2D5B8758F4FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{095C61E4-2BEC-4E6B-885F-2D5B8758F4FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{095C61E4-2BEC-4E6B-885F-2D5B8758F4FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
