@@ -8,6 +8,7 @@ using OfficeOpenXml;
 using OfficeOpenXml.Drawing.Chart;
 using OfficeOpenXml.Drawing;
 using System.Reflection;
+using System.IO;
 
 namespace TestEPPlus
 {
@@ -30,15 +31,15 @@ namespace TestEPPlus
                 var workSheet = package.Workbook.Worksheets.Add(type.Name);
                 for (int i = 0; i < headerList.Count(); i++)
                 {
-                    workSheet.SetValue(1, i, headerList[i]);
+                    workSheet.SetValue(1, i+1, headerList[i]);
                 }
-                foreach (T item in TableDatas)
+                for (int j=0;j< TableDatas.Count();j++ )
                 {
                     Dictionary<string, string> propertyDict = new Dictionary<string, string>();
                     foreach (var pi in props)
                     {
                         string propertyName = pi.Name;
-                        string propertyValue = pi.GetValue(item, null).ToString();
+                        string propertyValue = pi.GetValue(TableDatas[j], null).ToString();
                         propertyDict.Add(propertyName, propertyValue);
                     }
                     foreach (string key in propertyDict.Keys)
@@ -47,10 +48,14 @@ namespace TestEPPlus
                         {
                             if (headerList[i] == key)
                             {
-                                workSheet
+                                workSheet.SetValue(j + 2, i + 1, propertyDict[key]);
                             }
                         }
                     }
+                }
+                using (Stream stream = new FileStream(@"D:/test.xlsx", FileMode.Create))
+                {
+                    package.SaveAs(stream);
                 }
             }
         }

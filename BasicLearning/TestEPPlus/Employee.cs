@@ -12,5 +12,6 @@ namespace TestEPPlus
         public int age { get; set; }
         public string title { get; set; }
         public DateTime entryDate { get; set; }
+        public bool IsLeave{ get; set; }
     }
 }
