@@ -43,5 +43,13 @@ $(function(){
     // }
     // testPara(age=12,name="Alex"); //name=12 age=Alex
     
-    
+    var kkptotal = (8000 - 17).toFixed(2); //返回值为string类型
+            var kptotal = (80).toFixed(2);
+            console.log(typeof(kkptotal)); //返回值为string类型
+            debugger;
+            console.log("KKtotal:" + kkptotal);
+            console.log("Ktotal:" + kptotal);
+            if (parseFloat(kptotal)> parseFloat(kkptotal)) {
+                alert(1);
+            }
 });
