@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestEPPlus", "TestEPPlus\Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorialTest", "FactorialTest\FactorialTest.csproj", "{448058BA-E9EF-46EB-989C-A3250E3BBA57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebApi20181224", "TestWebApi20181224\TestWebApi20181224.csproj", "{87DE47A3-262A-4531-A785-03DC3F1F6DAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test20181225", "Test20181225\Test20181225.csproj", "{CCFAF4FF-0ABE-47AB-9C6B-F2F6980ADA1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{448058BA-E9EF-46EB-989C-A3250E3BBA57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{448058BA-E9EF-46EB-989C-A3250E3BBA57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{448058BA-E9EF-46EB-989C-A3250E3BBA57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87DE47A3-262A-4531-A785-03DC3F1F6DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87DE47A3-262A-4531-A785-03DC3F1F6DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87DE47A3-262A-4531-A785-03DC3F1F6DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87DE47A3-262A-4531-A785-03DC3F1F6DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCFAF4FF-0ABE-47AB-9C6B-F2F6980ADA1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFAF4FF-0ABE-47AB-9C6B-F2F6980ADA1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFAF4FF-0ABE-47AB-9C6B-F2F6980ADA1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFAF4FF-0ABE-47AB-9C6B-F2F6980ADA1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
