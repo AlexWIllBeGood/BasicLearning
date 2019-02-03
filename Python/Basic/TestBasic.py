@@ -182,11 +182,113 @@
 # print globals()
 # print locals()
 
-from TestPackage.SubPackage1 import function_in_package1
-from TestPackage.SubPackage2 import function_in_package2
+# from TestPackage.SubPackage1 import function_in_package1
+# from TestPackage.SubPackage2 import function_in_package2
+#
+# function_in_package1()
+# function_in_package2()
+#
+# if __name__=="__main__":
+#     print "this is main program"
 
-function_in_package1()
-function_in_package2()
+# print "你输入的是{0}".format(input("请输入"))
+
+# new_file=open("D:/TestFile.txt","w+")
+# new_file.writelines("It's all for test")
+# new_file.writelines("It will be all right")
+# new_file.close()
+
+# file=open("D:/TestFile.txt","r+")
+# print file.read(40)
+# print file.name
+# print file.closed
+# print file.mode
+# file.close()
+
+#测试文件定位 tell() seek()函数
+# file=open("D:/TestFile.txt","r+")
+# print file.read(2)
+# print "current position is {0}".format(file.tell())
+# file.seek(0,0)
+# print "current position is {0}".format(file.tell())
+# print file.read(2)
+# file.close()
+
+#测试重命名文件 rename() remove()函数
+import os
+# os.rename("D:/TestFile.txt","D:/NewName.txt")
+# os.remove("D:/NewName.txt")
+
+#测试文件夹的操作
+#getcwd() mkdir() chdir() rmdir()
+#使用字典去定义文件夹树结构
+# import os
+# base_dir="D:/"
+# dir_tree={
+#     "school1":{
+#         "grade1":{
+#             "class1":"Class1Content",
+#             "class2":"Class1Content",
+#         },
+#         "grade2":{
+#             "class1":"Class1Content",
+#             "class2":"Class1Content",
+#             "class3":"Class1Content"
+#         }
+#     },
+#     "school2":{
+#         "grade1":{
+#             "class1":"Class1Content",
+#             "class2":"Class1Content",
+#             "class3":"Class1Content"
+#         },
+#         "grade2":{
+#             "class1":"Class1Content",
+#             "class2":"Class1Content",
+#         }
+#     }
+# }
+# def init_folder_tree(dict_folder_tree,base_dir):
+#     if type(dict_folder_tree)==type({}):
+#         if (dict_folder_tree.keys().__len__() > 0):
+#             for folder_name in dict_folder_tree.keys():
+#                 new_dir = os.path.join(base_dir, folder_name)
+#                 new_folder_tree = dict_folder_tree[folder_name]
+#                 os.mkdir(new_dir)
+#                 init_folder_tree(new_folder_tree, new_dir)
+#     else:
+#         pass
+# init_folder_tree(dir_tree,base_dir)
+
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+# import sys,time
+# for i in range(30): #进度条类型
+#     sys.stdout.write("*")
+#     sys.stdout.flush()
+#     time.sleep(0.2)
+
+# try:
+#     file.take()
+# except BaseException as e:
+#     print e.message
+# finally:
+#     print 123
+
+# r r+ 不会主动创建
+# temp=open("D:/123456.txt","r+")
+# temp.write("this is a test file")
+# temp.close()
+
+
+
+
+
+
+
+
+
 
 
 
