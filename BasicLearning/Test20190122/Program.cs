@@ -24,7 +24,7 @@ namespace Test20190122
             //Console.WriteLine(CheckIDCard("130101198812180252"));
             //var result = GetAddress("福建省福州市");
             //Console.ReadKey();
-            Console.WriteLine(CheckIDCard("511423199302010035"));
+            Console.WriteLine(CheckIDCard("44072419621011681X"));
             Console.ReadKey();
         }
         public static bool CheckIDCard(string idCard)
