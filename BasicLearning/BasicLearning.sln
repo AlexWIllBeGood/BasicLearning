@@ -51,6 +51,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUnity20190215", "TestUn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebApi20190218", "TestWebApi20190218\TestWebApi20190218.csproj", "{A7668C7D-E4F7-4049-9359-CBE97C50157A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormulaSave", "FormulaSave\FormulaSave.csproj", "{5FD5AFB4-CC2C-45AF-8FE4-0CE998F6B774}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDotNetCore", "TestDotNetCore\TestDotNetCore.csproj", "{02BB497C-005A-43A6-9FEA-46668240F511}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +157,14 @@ Global
 		{A7668C7D-E4F7-4049-9359-CBE97C50157A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7668C7D-E4F7-4049-9359-CBE97C50157A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7668C7D-E4F7-4049-9359-CBE97C50157A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FD5AFB4-CC2C-45AF-8FE4-0CE998F6B774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FD5AFB4-CC2C-45AF-8FE4-0CE998F6B774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FD5AFB4-CC2C-45AF-8FE4-0CE998F6B774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FD5AFB4-CC2C-45AF-8FE4-0CE998F6B774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02BB497C-005A-43A6-9FEA-46668240F511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02BB497C-005A-43A6-9FEA-46668240F511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02BB497C-005A-43A6-9FEA-46668240F511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02BB497C-005A-43A6-9FEA-46668240F511}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
