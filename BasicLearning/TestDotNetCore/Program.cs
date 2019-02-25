@@ -9,11 +9,17 @@ namespace TestDotNetCore
     {
         static void Main(string[] args)
         {
-            IDbConnection connection;
+            //IDbConnection connection;
 
-            connection = new NpgsqlConnection("Server=168.33.162.63;Database=FYUNDB;user id=sa;password=fanyun@2018;");
-            Console.WriteLine(GetServerVersion(connection));
-            Console.ReadKey();
+            //connection = new NpgsqlConnection("Server=168.33.162.63;Database=FYUNDB;user id=sa;password=fanyun@2018;");
+            //Console.WriteLine(GetServerVersion(connection));
+            //Console.ReadKey();
+
+            TestContext tc = new TestContext();
+            string PKID = Guid.NewGuid().ToString("N");
+            tc.Student.Add(new Entities.Student() { PKID = PKID, Name = "Alex", Age = 25, Major = "SoftwareEngineer" });
+            tc.SaveChanges();
+
         }
         public static string GetServerVersion(IDbConnection connection)
         {
