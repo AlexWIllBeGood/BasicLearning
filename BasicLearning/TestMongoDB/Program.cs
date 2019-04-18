@@ -16,22 +16,23 @@ namespace TestMongoDB
         static void Main(string[] args)
         {
             InitDb("");
-            //for (int index = 1; index < 5; index++)
-            //{
-            //    Contact contact = new Contact
-            //    {
-            //        Email = string.Format("test{0}@example.com", index),
-            //        Name = string.Format("test{0}", index),
-            //        Phone = string.Format("{0}{0}{0} {0}{0}{0} {0}{0}{0}{0}", index)
-            //    };
-            //    Insert(contact);
-            //}
+            for (int index = 1; index < 5; index++)
+            {
+                Contact contact = new Contact
+                {
+                    Email = string.Format("test{0}@example.com", index),
+                    Name = string.Format("test{0}", index),
+                    Phone = string.Format("{0}{0}{0} {0}{0}{0} {0}{0}{0}{0}", index)
+                };
+                Insert(contact);
+            }
             //删除
             //Delete("5b5ac1d291cbf80c7025dd83");
-            var contact = GetContactById("5b5ac1d691cbf80c7025dd84");
-            Console.WriteLine(string.Format("Name:{0} Phone:{1} Email:{2} LastModified:{3}",contact.Name,contact.Phone,contact.Email,contact.LastModified));
-            Contact c = new Contact() {Id= "5b5ac1d691cbf80c7025dd84", Name="Alex",Email="AlexWillBeGood@163.com",Phone="18520723220",LastModified=DateTime.UtcNow};
-            Update(c);
+            //修改
+            //var contact = GetContactById("5b5ac1d691cbf80c7025dd84");
+            //Console.WriteLine(string.Format("Name:{0} Phone:{1} Email:{2} LastModified:{3}",contact.Name,contact.Phone,contact.Email,contact.LastModified));
+            //Contact c = new Contact() {Id= "5b5ac1d691cbf80c7025dd84", Name="Alex",Email="AlexWillBeGood@163.com",Phone="18520723220",LastModified=DateTime.UtcNow};
+            //Update(c);
             Console.ReadLine();
 
         }
@@ -73,7 +74,7 @@ namespace TestMongoDB
                 //c.Id = Guid.NewGuid().ToString("N");
                 //类似于GUID，但是只有24位
                 c.Id = ObjectId.GenerateNewId().ToString();
-                c.LastModified = DateTime.UtcNow;
+                c.LastModified = DateTime.Now;
                 contacts.InsertOne(c);
                 return true;
             }

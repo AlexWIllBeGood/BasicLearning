@@ -1,0 +1,7 @@
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestIDNum\bin\Debug\TestIDNum.exe.config
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestIDNum\bin\Debug\TestIDNum.exe
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestIDNum\bin\Debug\TestIDNum.pdb
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestIDNum\obj\Debug\TestIDNum.csprojAssemblyReference.cache
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestIDNum\obj\Debug\TestIDNum.csproj.CoreCompileInputs.cache
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestIDNum\obj\Debug\TestIDNum.exe
+C:\Users\win7\Desktop\GitFile\BasicLearning\TestIDNum\obj\Debug\TestIDNum.pdb
